@@ -1,10 +1,10 @@
 [
-	{
+{
 	"id": "io.github.sagaraggarwal86-configurable-aggregate-report",
-	"name": "Configurable Aggregate Report",
-	"description": "A listener configurable plugin to prepare report for configurable parameters for Apache JMeter",
-	"screenshotUrl": "https://raw.githubusercontent.com/sagaraggarwal86/Configurable_Aggregate_Report/main/img.jpg",
-	"helpUrl": "https://github.com/sagaraggarwal86/Configurable_Aggregate_Report/blob/main/README.md",
+	"name": "JAAR — JTL AI Analysis & Reporting",
+	"description": "A file-based Apache JMeter listener plugin for post-test JTL analysis. Provides a filterable aggregate table, CSV export, SLA threshold highlighting, and AI-generated HTML performance reports — with zero runtime overhead.",
+	"screenshotUrl": "https://raw.githubusercontent.com/sagaraggarwal86/jaar-jmeter-plugin/main/docs/Image.jpg",
+	"helpUrl": "https://github.com/sagaraggarwal86/jaar-jmeter-plugin/blob/main/README.md",
 	"vendor": "Sagar Aggarwal",
 	"markerClass": "com.personal.jmeter.listener.ListenerCollector",
 	"componentClasses": [
@@ -13,8 +13,20 @@
 	],
 	"versions": {
 		"1.1.0": {
-			"changes": "Initial Release changes and Bug Fix for saving the Table",
+			"changes": "Initial release",
 			"downloadUrl": "https://repo1.maven.org/maven2/io/github/sagaraggarwal86/Configurable_Aggregate_Report/1.1.0/Configurable_Aggregate_Report-1.1.0.jar"
+		},
+		"3.1.0": {
+			"changes": "Configurable percentile, SLA threshold highlighting, AI-generated HTML performance report, CLI headless mode, transaction search with regex support, chart interval control",
+			"downloadUrl": "https://repo1.maven.org/maven2/io/github/sagaraggarwal86/Configurable_Aggregate_Report/3.1.0/Configurable_Aggregate_Report-3.1.0.jar"
+		},
+		"4.2.1": {
+			"changes": "Plugin renamed to JAAR, bug fixes, performance improvements",
+			"downloadUrl": "https://repo1.maven.org/maven2/io/github/sagaraggarwal86/jaar-jmeter-plugin/4.2.1/jaar-jmeter-plugin-4.2.1.jar"
+		},
+		"4.5.0": {
+			"changes": "Added new columns in table, improved filter settings, Added 'Reload Button' to Refresh AI Provider list, Added 'aggregate report' with SLA PASS/FAIL, some bug fixes, performance improvements",
+			"downloadUrl": "https://repo1.maven.org/maven2/io/github/sagaraggarwal86/jaar-jmeter-plugin/4.5.0/jaar-jmeter-plugin-4.5.0.jar"
 		}
 	}
 },
@@ -931,6 +943,11 @@
       "com.ubikingenierie.jmeter.plugin.hls.gui.HLSSamplerGUI"
     ],
     "versions": {
+    "10.3.0": {
+      "changes": "Support for EXT-X-MAP tag in HLS and availabilityTimeOffset='INF' in DASH and bug fixes, full release notes at https://www.ubik-ingenierie.com/blog/ubikloadpack-video-streaming-plugin-10-3-0/",
+      "downloadUrl": "https://ubikloadpack.com/plugins/ulp-jmeter-streaming-plugin/10.3.0/ubik-jmeter-videostreaming-plugin-10.3.0.jar",
+      "depends":["jmeter-core", "jmeter-components", "jmeter-http"]
+    },
     "10.2.8": {
       "changes": "MPEG-DASH bugfix release (invalid segment availability)",
       "downloadUrl": "https://ubikloadpack.com/plugins/ulp-jmeter-streaming-plugin/10.2.8/ubik-jmeter-videostreaming-plugin-10.2.8.jar",
@@ -2805,6 +2822,48 @@
   "versions": {
     "1.0.0": {
       "downloadUrl": "https://github.com/rishavsawarn/jmeter-jtl-xls-report-plugin/releases/download/v1.0.0/jtl-xls-plugin-1.0.jar"
+    }
+  }
+},
+{
+  "id": "prism",
+  "name": "Prism - tab-style interface plugin for Apache JMeter",
+  "description": "A tab-style interface plugin for Apache JMeter",
+  "screenshotUrl": "https://raw.githubusercontent.com/QAInsights/prism/refs/heads/main/prism-oss/images/Prism.png",
+  "helpUrl": "https://github.com/QAInsights/prism",
+  "vendor": "QAInsights.com",
+  "markerClass": "com.jmeter.prism.oss.PrismMenuCreator",
+  "componentClasses": [
+    "com.jmeter.prism.oss.PrismMenuCreator"
+  ],
+  "versions": {
+    "1.0.0": {
+      "downloadUrl": "https://github.com/QAInsights/prism/releases/download/v1.0.2/prism-oss-1.0.0-SNAPSHOT.jar",
+      "depends": ["jmeter-core", "jmeter-components"]
+    }
+  }
+},
+{
+  "id": "avm-mcp-sampler",
+  "name": "MCPLoadTester MCP Sampler",
+  "description": "MCP sampler for stdio, HTTP, and HTTP+SSE transports",
+  "screenshotUrl": "https://raw.githubusercontent.com/AndreyVMarkelov/MCPulse/main/docs/images/stdio_sampler_settings.png",
+  "helpUrl": "https://github.com/AndreyVMarkelov/MCPulse",
+  "vendor": "Andrey Markelov",
+  "markerClass": "io.github.mcpsampler.gui.McpSamplerGui",
+  "componentClasses": [
+    "io.github.mcpsampler.McpSampler",
+    "io.github.mcpsampler.gui.McpSamplerGui"
+  ],
+  "versions": {
+    "1.0.1": {
+      "downloadUrl": "https://github.com/AndreyVMarkelov/MCPulse/releases/download/v1.0.1/jmeter-mcp-sampler-1.0.1.jar",
+      "changes": "Release v1.0.1",
+      "libs": {
+        "jackson-databind": "https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar",
+        "jackson-core": "https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar",
+        "jackson-annotations": "https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar"
+      }
     }
   }
 }
