@@ -2871,7 +2871,7 @@
   "id": "jmeter-studio-oss",
   "name": "JMeter Studio - Theme Engine Plugin for Apache JMeter",
   "description": "A modern, extensible theme engine for Apache JMeter featuring both dark and light themes with custom icon sets",
-  "screenshotUrl": "https://raw.githubusercontent.com/QAInsights/jmeter-studio/refs/heads/main/images/jmeter-studio-screenshot.png",
+  "screenshotUrl": "https://raw.githubusercontent.com/QAInsights/jmeter-studio/refs/heads/main/images/JMeter-Studio.png",
   "helpUrl": "https://github.com/QAInsights/jmeter-studio",
   "vendor": "QAInsights.com",
   "markerClass": "org.apache.jmeter.gui.plugin.MenuCreator",
