@@ -5,19 +5,29 @@ python downloads.py
 rm -rf upload
 mkdir -p upload
 
-# site docs
-cp -r site/* upload/
+# Build static site with MkDocs
+cd site
+bash build.sh
+cd ..
 
-# examples
+# Static site output
+cp -r site/build/* upload/
+
+# Examples
 cp -r examples upload/img/
+
+# PHP for /repo/ endpoint (stays dynamic)
+cp site/index.php upload/
+cp site/cfg.php upload/
+cp site/composer.json upload/
+cp -r site/JPGC upload/
 
 php --version
 curl -sS https://getcomposer.org/installer | php
 cd upload
 ../composer.phar update --no-dev --prefer-stable
-cp vendor/undera/pwe/.htaccess ./
 cd ..
 
 cd upload
-zip -r site.zip * .htaccess
+zip -r site.zip *
 cd ..
