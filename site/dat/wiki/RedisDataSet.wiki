@@ -116,6 +116,6 @@ The RedisDataSet uses the [https://github.com/xetorthio/jedis Jedis Java Redis l
 Starting from version 0.6, RedisDataSet uses  [https://redis.io/commands/srandmember/ srandmember] and [https://redis.io/commands/lmove/ lmove] commands.
 For Redis versions below 6.2.0, you can define a "plugins.redis.legacy=true" property in jmeter.properties.
 
-For data loaded into a Redis set, RedisDataSet uses [/path/to/redis/url spop] and [https://redis.io/commands/sadd sadd] commands.
+For data loaded into a Redis set, RedisDataSet uses [https://redis.io/commands/spop spop] and [https://redis.io/commands/sadd sadd] commands.
 
 For data loaded into a Redis list, RedisDataSet uses [https://redis.io/commands/lpop lpop] and [https://redis.io/commands/rpush rpush] commands.

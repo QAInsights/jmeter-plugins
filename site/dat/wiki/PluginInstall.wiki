@@ -76,7 +76,7 @@ This is not mandatory, only if you want to change the default behaviors. The opt
 
 = Old-Style Plugin Sets =
 
-If you look for old-style plugin sets up to version 1.4.0, find them [/downloads/old/ here].
+If you look for old-style plugin sets up to version 1.4.0, find them in the Changelog.
 
 = Installing Versions Before 1.1.1 =
 JMeter-Plugins versionы  before 1.1.1 were shipped via three distribution ZIPs:

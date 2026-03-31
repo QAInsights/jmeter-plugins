@@ -14,7 +14,7 @@ Second_Variable,and here value 2
 
 1. To use the absolute path, let's create test plan with <i>Variables From CSV File</i>, <i>Thread Group</i>, <i>Debug Sampler</i> and <i>View Results Tree</i>. Then configure <i>Variables From CSV File</i>, specify the absolute path to <i>testvariables.csv</i>, optional variable prefix `MyVar_` and column separator ','. Now your plan should look like this:
 
-[/site/img/wiki/varsfromcsv1.png]
+[/img/wiki/varsfromcsv1.png]
 
 Save this test plan to <i>c:\temp\test1.jmx</i>.
 
@@ -38,4 +38,4 @@ TESTSTART.MS=1264671163750
 
 This expression dynamically resolves the path (like <i>D:\JAVA_pet_projects\resources\properties.csv</i>) relative to the directory of the current <i>.jmx</i> file.
 
-[/site/img/wiki/varsfromcsv2.png]
+[/img/wiki/varsfromcsv2.png]

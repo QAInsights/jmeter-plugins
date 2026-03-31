@@ -7,7 +7,7 @@ This tutorial is the solution for the following request on JMeter mailing list:
 
 The user has asked how can he do an asynchronous download in JMeter, making main thread still iterating while lengthy operation is in progress. The solution that use [InterThreadCommunication Inter-Thread Communication features] from JMeter-Plugins.org is described below. It will take MySQL Workbench website as a sample service.
 
-Prerequisites: JMeter 2.8 or newer with the latest [StandardSet Standard Set] from [http://JMeter-Plugins.org JMeter-Plugins.org].
+Prerequisites: JMeter 2.8 or newer with the latest Standard Set from [http://JMeter-Plugins.org JMeter-Plugins.org].
 
 The whole idea is to have 2 separate Thread Groups: first for main threads, iterating over site pages and second as asynchronous download workers pool. The solution will use single FIFO queue from [InterThreadCommunication Inter-Thread Communication] plugins to pass download URLs for asynchronous download.
 
@@ -124,4 +124,4 @@ Beware that FIFO queue will wait a thousand or million seconds before timeout. S
 
 == Download Resulting Test Plan ==
 
-Remember that you'll need a [StandardSet Standard Set] of plugins installed to open and run this tutorial: [/editor/?utm_source=jpgc&utm_medium=openurl&utm_campaign=examples#/img/examples/AsyncDownloadTutorial.jmx AsyncDownloadTutorial.jmx]
+Remember that you'll need a Standard Set of plugins installed to open and run this tutorial: [/editor/?utm_source=jpgc&utm_medium=openurl&utm_campaign=examples#/img/examples/AsyncDownloadTutorial.jmx AsyncDownloadTutorial.jmx]

@@ -135,7 +135,7 @@ This option is here to remove these non representative points.
 
 ====Double-Click to Change Color====
 When you double click on the colored square in the legend, JMeterPlugins
-chooses a different color for you.  A [Color Choser](http://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html) box is not currently available.
+chooses a different color for you.  A [http://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html Color Choser] box is not currently available.
 || *Double click on the colored square in the legend to change color of the line* ||
 || [/img/wiki/settings/doubleClickToChangeColor.png] ||
 
@@ -184,7 +184,7 @@ Specify the color you want for labels with particular text.
 [/img/wiki/settings/labelToColorMapping.png]
 
 Notes:
-- Colors can be specified using either the case-insensitive html color name or the the 6-hex-digit RGB value preceded by the pound/hash sign (#).  For details, see [see here](http://www.w3schools.com/htmL/html_colornames.asp).  
+- Colors can be specified using either the case-insensitive html color name or the the 6-hex-digit RGB value preceded by the pound/hash sign (#).  For details, [http://www.w3schools.com/htmL/html_colornames.asp see here].  
 For example, the text "cpu=blue" in the above image is equivalent to both "cPu=Blue" and "CPu="#0000FF", which also shows that label matching is case insensitive.
 - JMeter must be restarted to pick up changes in the user.properties file.
 - Each label in the legend on a "jp@gc - Composite Graph" each has two parts, separated by " > ".  
@@ -205,7 +205,7 @@ If your labels include the text 01, 02, 03, etc, then these colors:
 jmeterPlugin.labelToColorMapping=01=#FFF3E0:02=#FFE0B2:03=#FFCC80:04=#FFB74D:05=#FFA726:06=#FF9800:07=#FB8C00:08=#F57C00:09=#EF6C00:10=#E65100
 }}}
 
-Below are some additional palettes, all stolen from [here](http://www.google.com/design/spec/style/color.html#).
+Below are some additional palettes, all stolen from [http://www.google.com/design/spec/style/color.html# here].
 
 {{{
 ## Reds:
