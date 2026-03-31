@@ -16,6 +16,9 @@ cp -r site/build/* upload/
 # Examples
 cp -r examples upload/img/
 
+# Merge repo JSON files into single file
+python merge_repo.py
+
 # PHP for /repo/ endpoint (stays dynamic)
 cp site/index.php upload/
 cp site/cfg.php upload/
