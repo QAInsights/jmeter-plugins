@@ -25,6 +25,7 @@ cp site/cfg.php upload/
 cp site/composer.json upload/
 cp -r site/JPGC upload/
 cp site/dat/out.xml upload/dat/
+cp -r site/files upload/ 2>/dev/null || true
 
 php --version
 curl -sS https://getcomposer.org/installer | php
