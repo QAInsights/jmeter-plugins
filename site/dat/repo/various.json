@@ -2924,43 +2924,29 @@
       "changes": "Initial release. Requires Config Element in test plan."
     }
   }
-  },
-  {
-    "id": "llm-metrics-visualizer",
-    "name": "LLM Metrics Visualizer",
-    "description": "A JMeter listener plugin for monitoring LLM (Large Language Model) performance metrics in real time. Captures TTFT (Time to First Token), TPOT (Time per Output Token), RPS, input/output tokens per request and per minute, and response time percentiles \u2014 grouped by sampler name.",
-    "screenshotUrl": "",
-    "helpUrl": "https://github.com/bakthava/LLM-Metrics-Visualizer",
-    "vendor": "bakthava",
-    "markerClass": "com.example.jmeter.LLMMetricsVisualizer",
-    "componentClasses": [
-      "com.example.jmeter.LLMMetricsVisualizer"
-    ],
-    "versions": {
-      "0.1": {
-        "downloadUrl": "https://github.com/bakthava/LLM-Metrics-Visualizer/releases/download/v0.1/LLM_Metrics_Visualizer-0.1.jar",
-        "depends": ["jmeter-core"]
-      }
-    }
-  },
+},
   {
     "id": "swagger-postman-importer",
     "name": "Swagger / Postman Importer",
-    "description": "Imports Swagger/OpenAPI 2.0 and 3.0 specs (JSON and YAML) and Postman Collection v2.0/v2.1 files into a JMeter test plan. Supports all body modes (raw, urlencoded, formdata, GraphQL), Bearer, Basic, API Key and OAuth2 auth, nested folders with collection-level auth inheritance, and generates HTTP Header Managers per request.",
+    "description": "JMeter plugin for importing Swagger/OpenAPI specifications and Postman collections to automatically generate JMeter test plans. Supports both JSON and YAML formats with automatic HTTP sampler generation and parameter extraction.",
     "screenshotUrl": "",
     "helpUrl": "https://github.com/bakthava/swagger-postman-importer",
-    "vendor": "bakthava",
+    "vendor": "Bakthavachalam",
     "markerClass": "com.example.jmeter.importer.SwaggerPostmanImporterAction",
     "componentClasses": [
       "com.example.jmeter.importer.SwaggerPostmanImporterAction",
       "com.example.jmeter.importer.SwaggerPostmanImporterMenuCreator"
     ],
     "versions": {
+      "1.1": {
+        "changes": "Updated JMeter dependencies to 5.6.3; upgraded JSON library; optimized for Java 1.8+ compatibility; improved JAR shading and removed unused dependencies",
+        "downloadUrl": "https://github.com/bakthava/swagger-postman-importer/releases/download/v1.1/swagger-postman-importer-1.1.jar"
+      },
       "1.0": {
-        "downloadUrl": "https://github.com/bakthava/swagger-postman-importer/releases/download/v1.0/swagger-postman-importer-1.0.jar",
-        "changes": "Initial release: Swagger/OpenAPI and Postman Collection importer.",
-        "depends": ["jmeter-core"]
+        "changes": "Initial release - Support for Swagger/OpenAPI and Postman collection imports with automatic test plan generation",
+        "downloadUrl": "https://github.com/bakthava/swagger-postman-importer/releases/download/v1.0/swagger-postman-importer-1.0.jar"
       }
     }
   }
+
 ]
