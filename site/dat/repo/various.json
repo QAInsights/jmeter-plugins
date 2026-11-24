@@ -3406,6 +3406,14 @@
           "jmeter-core",
           "jmeter-components"
         ]
+      },
+      "4.0.1": {
+        "changes": "NEW: Feather Wand Free chat without an API key, first-run provider setup, OpenCode V2 support, and Agent Mode improvements.",
+        "downloadUrl": "https://github.com/QAInsights/jmeter-ai/releases/download/v4.0.1/jmeter-agent-4.0.1.jar",
+        "depends": [
+          "jmeter-core",
+          "jmeter-components"
+        ]
       }
     }
   },
